@@ -1,0 +1,60 @@
+*{margin:0; padding:0; box-sizing: border-box;}*
+
+/*Configurações básicas*/
+a {text-decoration: none; font-family: arial; font-size: 18px; color: black;}
+h2 {color:blue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;}
+p {color:white; font-family: arial; font-size: 20px;}
+
+.cabecalho {
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.20);
+    padding:20px
+}
+
+li {padding: 10px 20px; border-radius: 20px; color:blue; margin-right: 8px;}
+
+.navegacao {
+    display: flex;
+    list-style: none;
+}
+li:hover {
+    background-color: rgba(0,0,0,.20);
+    
+}
+
+/*Formatação da parte main */
+.conteudo {
+    display: flex;
+}
+.empregador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+    background-color: #079EF4;
+}
+.funcionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #36E8C3;
+}
+.empregador > div {
+    background-color: #36E8C3;
+    border-radius: 200px;
+    padding:30px
+} 
+.funcionario > div {
+    background-color: #079EF4;
+    border-radius: 200px;
+    padding:30px
+} 
+.container_info {
+    display: flex;
+    flex-direction: column;
+}
