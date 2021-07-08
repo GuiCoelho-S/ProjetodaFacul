@@ -1,14 +1,8 @@
 *{margin:0; padding:0; box-sizing: border-box;}*
 
-/*Configurações básicas*/
-a {text-decoration: none; font-family: arial; font-size: 18px; color: black;}
-h2 {color:black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;}
-p {color:white; font-family: arial; font-size: 20px;}
-
 body {
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,213,186,0.6026785714285714) 0%, rgba(0,212,255,1) 100%);
-height: 100%;
 }
 /*Cabeçalho*/
 nav {
@@ -52,39 +46,57 @@ li a:hover {
     padding: 5px 10px;
 }
 
-/*Formatação da parte main */
+/*Login*/
+main {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+}
+.login_funcionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:380px;
+    height: 380px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,213,186,0.6026785714285714) 0%, rgba(10,106,100,1) 0%, rgba(36,202,236,1) 100%);
+    border-radius: 50px;
+    padding:10px;
+}
+.login_funcionario > * {
+    padding:4px;
+}
+p {
+    color:white;
+    font-family: arial;
+}
+input {
+    width:300px;
+    height: 30px;
+    border-bottom: 1px solid white;
+    border:1px solid transparent;
+    
+}
+.aviso {
+    width:90%;
+    text-align: justify;
+    font-size: 14px;
+}
+.aviso > p {
+    font-size:5px;
+}
 
-.conteudo {
-    display: flex;
+h3 {
+    color:#00FFF7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
 }
-.empregador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    justify-content: space-evenly;
-    background-color: #079EF4;
+
+.email {
+    width:90%;
 }
-.funcionario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    height: 86vh;
-    background-color: #36E8C3;
-}
-.empregador > div {
-    background-color: #36E8C3;
-    border-radius: 200px;
-    padding:30px
-} 
-.funcionario > div {
-    background-color: #079EF4;
-    border-radius: 200px;
-    padding:30px
-} 
-.container_info {
-    display: flex;
-    flex-direction: column;
+.senha {
+    width: 90%;
 }
